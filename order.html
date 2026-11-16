@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Создать заказ — Фриланс.Рядом</title>
+<meta name="description" content="Оставьте заявку на сайт, монтаж видео, дизайн или текст. Бюджет и срок указываете вы, отклики приходят на почту.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html">Фриланс<span>.Рядом</span></a>
+    <nav class="nav">
+      <a href="list.html">Заказы</a>
+      <a href="order.html">Создать заказ</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1 class="section">Новый заказ</h1>
+  <p class="hint">Заполните поля — заявка сразу уйдёт владельцу сайта, и он свяжется с вами. Это бесплатно.</p>
+
+  <form class="panel" id="orderForm" action="https://formsubmit.co/tlstguzv@mail.ru" method="POST" accept-charset="UTF-8">
+
+    <!-- Приём заявок идёт через FormSubmit (бесплатно, без регистрации).
+         Первая отправка присылает на почту письмо с кнопкой Activate Form:
+         её нужно нажать один раз, дальше заявки приходят автоматически. -->
+    <input type="hidden" name="_subject" value="Новая заявка с сайта Фриланс.Рядом">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://podrabotka-ryadom.ru/thanks.html">
+
+    <div class="field">
+      <label for="title">Название</label>
+      <input type="text" id="title" name="title" placeholder="Например: Сайт-визитка для магазина" required>
+    </div>
+
+    <div class="field">
+      <label for="desc">Описание</label>
+      <textarea id="desc" name="desc" placeholder="Что нужно сделать, какие разделы, есть ли примеры" required></textarea>
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label for="budget">Бюджет, ₽</label>
+        <input type="number" id="budget" name="budget" min="0" step="500" placeholder="10000" required>
+      </div>
+      <div class="field">
+        <label for="term">Срок</label>
+        <input type="text" id="term" name="term" placeholder="Например: 5 дней" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="contact">Ваш контакт для ответа</label>
+      <input type="text" id="contact" name="contact" placeholder="Email или @telegram" required maxlength="120">
+    </div>
+
+    <div class="hp" aria-hidden="true">
+      <label for="_honey">Не заполняйте это поле</label>
+      <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+    </div>
+
+    <button class="btn btn-primary" id="submitBtn" type="submit">Опубликовать</button>
+    <p class="hint">После отправки откроется страница подтверждения.</p>
+  </form>
+
+  <footer class="footer">Фриланс.Рядом — учебный прототип, 2026</footer>
+</main>
+
+
+</body>
+</html>
