@@ -39,3 +39,7 @@ background.jpg
 Игорь Толстогузов
 - podrabotka-ryadom.ru
 - vovochka-ai.ru
+
+## Другие работы
+- Демо интернет-магазина (каталог, корзина, админка): https://igorzV23.github.io/shop-demo/index.html
+- 
